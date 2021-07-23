@@ -164,6 +164,7 @@ body{
     display: block;
     text-decoration: none;
     color: #000;
+
 }
 .ham-links button{
     background: none;
@@ -195,17 +196,15 @@ body{
 
     .ham-links{
         width: 100%;
-        flex-direction: column;
+  
         background-color: #ececec;
         
         
     }
 
-    .ham-links{
-        flex-direction: column;
-    }
+   
     .ham-links a{
-        text-align: center;
+     
         margin-left: 50%;
         color: #000;
         margin-top: 15px;
@@ -583,18 +582,69 @@ body{
     transition: all 0.4s ;
     
 }
-
-@media(max-width:630px){
+@media(max-width:768px){
     .relative img{
-        height: 65vh;
+        height: 60vh;
     }
-
     .absolute{
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 3%;
     }
 }
+
+@media(max-width:560px){
+  
+    .absolute{
+       top: 20%;   
+    }
+    .absolute h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:460px){
+    .relative img{
+        height: 50vh;
+    }
+    .absolute{
+        top: 10%;   
+     }
+    .absolute h1{
+        font-size: 1.4rem;
+    }
+    .home-desc{
+        width: 50%;
+        font-size: 15px;
+    }
+}
+@media(max-width:360px){
+    .relative img{
+        height: 40vh;
+    }
+    .absolute{
+        top: 7%;   
+     }
+    .absolute h1{
+        font-size: 1.2rem;
+    }
+    .home-desc{
+        width: 70%;
+        font-size: 15px;
+    }
+    .marg-a a{
+        padding: 5px;
+    }
+}
+@media(max-width:337px){
+    .home-desc{
+        width: 80%;
+        font-size: 15px;
+    }
+    .marg-a a{
+        padding: 3px;
+    }
+}
+
 /* New arrival section starts here */
 .heading-c{
     color: var(--primary-color);
